@@ -35,8 +35,8 @@ struct RepoListView: View {
           }
         }.navigationBarTitle("\(language.capitalized) Repos", displayMode: .inline)
         Spacer()
-      }.onAppear{ Task{ await loadData() } }
-//      }.task{ await loadData() }
+//      }.onAppear{ Task{ await loadData() } }
+      }.task{ await loadData() }
 
     }
     .navigationBarTitle("More languages", displayMode: .inline)

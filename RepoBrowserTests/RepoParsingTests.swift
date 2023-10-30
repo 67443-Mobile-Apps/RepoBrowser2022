@@ -82,8 +82,8 @@ class RepoParsingTests: XCTestCase {
 
     // When...
     let repos = await parser.fetchRepositories()
-    XCTAssertEqual(repos.first?.name, "okhttp")
-    XCTAssertEqual(repos.first?.htmlURL, "https://github.com/square/okhttp")
+    XCTAssertEqual(repos.first?.name, "kotlin")
+    XCTAssertEqual(repos.first?.htmlURL, "https://github.com/JetBrains/kotlin")
     self.expectation.fulfill()
 
     // Wait how long...
